@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+    <h2>Can you help Violet escape her nightmare?</h2>
+
+    <p>
+        Violet is stuck in her nightmare and must escape! But she needs your help to do it. 
+        Are you willing to take on the challenge and help Violet escape the ghosts that haunt her dreams?
+
+    </p>
+    <p>
+        Click <a href="{{ url_for('game') }}">here </a> to play the game
+    </p>
+
+    <h2>How to play the game!</h2>
+    
+    <ol>    
+            <li>Please register to play the game</li>
+            <li>Use the arrows on your keyboard to move Violet </li>
+            <li>Press space to shoot Violet's ghost</li>
+            <li>You can only shoot one bullet at a time</li>
+            <li>The grim reaper is chasing Violet, so make sure you dont let him catch you as you will lose a life</li>
+            <li>You cannot kill the grim reaper, so move fast</li>
+            <li>You have only three lives, so tread carefully</li>
+            <li>Find the key to win </li>
+            <li>Dont let any ghosts touch you or you will be repostioned to the start of the game and you will lose a life</li>
+            <li>Collect powerups for a helping hand</li>
+            <li>Collect coins to try and beat your high score!</li>
+    </ol>
+
+
+    <h2>How things work!</h2>
+
+    <ol>
+            <li>The player can move anywhere except for the tiled areas as I've blocked them using a tile collison method</li>
+            <li>The powerup will make you go quicker for a 5 seconds </li>
+            <li>When you lose one life, you will return to your orginal position</li>
+            <li>When you lose all lives, the game will stop</li>
+            <li>Coins add to your score</li>
+            <li>The key tells the game to stop and that you have won</li>
+            <li>Press the reset button at any point of the game if you want to reset the game</li>
+            <li>Press the leaderboard button if you want to see the leaderboard</li>
+            <li>Only your high score will be saved to the leaderboard</li>
+    </ol>
+
+{% endblock %}

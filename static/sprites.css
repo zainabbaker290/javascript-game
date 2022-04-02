@@ -1,0 +1,114 @@
+canvas {
+    display: block;
+    margin: 1em auto;
+}
+
+body {
+    background-color: black;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+
+h1, h2 {
+    color: violet;
+    border: 5px solid indigo ;
+    text-align: center;
+}
+
+main p, ol, form, p{
+    text-align: center;
+    border: black;
+    color: purple;
+    background-color: violet;
+    padding: 2%;
+    margin: 2%;
+}
+
+nav {
+    background-color: black;
+    padding: 4%;
+    width: 92%;
+    text-align: center;
+}
+
+nav a {
+    padding: 2%;
+    border: 5px solid violet;
+}
+
+@media (hover:hover) {
+    a:hover {
+        background-color: violet;
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
+table {
+    font-size: 20px;
+    text-align: center;
+    color: purple;
+    background-color: violet;
+    padding: 2%;
+    margin: 2%;
+    width: 90%;
+
+}
+caption{
+    background-color: violet;
+
+}
+
+/* some of the button and score positioning has been taken from W3 schools 'https://www.w3schools.com/' but has been adjusted */
+
+#outcome{
+    font-size: 5em;
+    color:violet;
+    position: absolute;
+    margin: 0;
+    width: 50%;
+    text-align: center;              
+    bottom: 50%; 
+    left: 25%;                       
+    transform: translate(50, 0%);
+    background-color: transparent; 
+}
+
+#score {
+    font-size: 5em;
+    color: violet;
+    position: absolute;
+    margin: 0;
+    width: 50%;
+    text-align: center;              
+    bottom: 30%; 
+    left: 25%;                       
+    transform: translate(50, 0%);
+    background-color: transparent; 
+}
+
+#reset {
+    background-color: violet;
+    position: absolute;
+    width: 10%;
+    height: 5%;
+    left: 73.5%;
+    bottom: 7%;
+    font-size: 1em;
+}
+
+#leaderboard {
+    background-color: violet;
+    position: absolute;
+    width: 10%;
+    height: 5%;
+    left: 62.5%;
+    bottom: 7%;
+    font-size: 1em;
+}
+
+
+

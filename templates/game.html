@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Violet's Nightmares</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'sprites.css') }}"/>
+        <script src="{{ url_for('static', filename = 'sprites.js') }}" type="module"></script>
+        <link rel="icon" href="{{ url_for('static', filename = 'favicon.ico') }}">
+    </head>
+    <body>
+        <canvas width="1024" height="640"></canvas>
+
+        <p id="outcome"></p>
+        <p id="score"></p>
+        
+        <audio controls autoplay loop>
+            <source src="{{ url_for('static', filename = 'mixkit-greed-404.mp3') }}"  type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+    
+        <button id="reset">Reset Game</button>
+        <div><button id="leaderboard">Leaderboard</button></div>
+
+        <main>
+
+        </main>
+    </body>
+
+
+
+
+
+
+
+
+</html>
