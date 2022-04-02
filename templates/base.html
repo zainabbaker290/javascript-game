@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Violet's Nightmares</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'sprites.css') }}"/>
+        <link rel="icon" href="{{ url_for('static', filename = 'favicon.ico') }}">
+    </head>
+    <body>
+        <header>
+            <h1>Violet's Nightmares</h1>   
+        </header>
+
+        <nav>
+            <a href="{{ url_for('game') }}">The Game </a>
+            <a href="{{ url_for('home') }}"> Home </a>  
+            <a href="{{ url_for('register') }}"> Register </a>  
+            <a href="{{ url_for('login') }}"> Login </a> 
+        </nav> 
+
+        <main>  
+            {% block main_content %}
+            {% endblock %}    
+        </main>
+
+        <p>
+            {% if g.user %}
+                User id: {{ g.user }}
+                <br>
+                <a href="{{ url_for('logout') }}">Logout</a>
+            {% else %}
+                <a href="{{ url_for('register') }}">Register</a>
+                <a href="{{ url_for('login') }}">Login</a>
+            {% endif %}
+
+        </p>
+       
+    </body>
+
+    <footer>
+        <p>
+            All images are free of use and are owned by the following:
+            <br>
+            Sprite images: <a href="https://untamed.wild-refuge.net/rmxpresources.php?characters">https://untamed.wild-refuge.net</a>
+            <br>
+            The tileset: <a href="https://opengameart.org/">https://opengameart.org/</a>
+            <br>
+            The objects in the game: <a href="https://itch.io/">https://itch.io/</a>
+            <br>
+            The music: <a href="https://mixkit.co/">www.mixkit.co</a>
+        </p>
+    </footer>
+
+
+
+
+</html>

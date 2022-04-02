@@ -1,0 +1,22 @@
+<h2>Welcome</h2>
+
+
+<table>
+    <caption>Leaderboard</caption>
+    <tr>
+        <th>User:</th>
+        <th>Score</th>
+        
+    </tr>
+    {% for l in leaderboard %}
+    <tr>
+        <td>{{ l["user_name"] }}</td>
+        <td>{{ l["score"] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+
+
+
